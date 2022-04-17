@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/iconEquations.png">
+    <title>Subtração</title>
+
+    <!-- INTERN CSS -->
+    <style>
+        body{
+        background-color: black;
+        }
+
+        #container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: burlywood;
+            width: 200px;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            border: 1px solid grey;
+            border-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: block;
+        }
+
+        #box{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input{
+            width: 25vh;
+            height: 5vh;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            outline: none;
+        }
+
+        button{
+            width: 20vh;
+            height: 4vh;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        #resultado{
+            /* padding-top: 2vh; */
+            /* padding-bottom: 3vh; */
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #backButton{
+            display: none;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        
+    </style>
+
+    <!-- INTERN JS -->
+    <script>
+        function calcular(){
+            var resultado = document.getElementById("resultado");
+            var numero = document.getElementById("numero").value;
+            if(numero == "" || numero==null){
+                alert("Digite Um Número 1 a 1000.");
+                return false;
+            }
+
+            resultado.innerHTML = '';
+            for(let i = 1; i < 11; i++){
+                resultado.innerHTML +=  numero + " - " + i + " = " + (numero-i) + "<br>"
+            }    
+
+            backButton.style.display = "inline-block";
+
+        }
+    </script>
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="box">
+            <input id="numero" type="number" min="1" max="1000">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+    
+        <div id="resultado"></div>
+    </div>
+
+    <!-- RETURN BUTTON -->
+    <div id="backButton">
+        <a href="../index.html">
+            <img src="./assets/backButton.png" width="50px">
+        </a>            
+    </div>
+
+</body>
+</html>
