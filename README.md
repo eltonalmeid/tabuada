@@ -5,7 +5,7 @@
 </p>
 
 <h2 align="center">
-  Acesse a Tabuada Clicando<a target="_blank" href="#">AQUI</a>!
+  Acesse a Tabuada Clicando <a target="_blank" href="https://eltonalmeid.github.io/tabuada/">AQUI</a>!
 </h2>
 
 <p align="center">
@@ -22,4 +22,4 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - HTML
 - CSS
-- JavaScript# tabuada
+- JavaScript
