@@ -14,7 +14,7 @@
 </p>
 
 ## :clipboard: Sobre o Projeto
-Essa página review do Mercedes Benz AMG GT 63 S, foi desenvolvida com os conhecimentos que possuo em HTML, CSS e JS.
+Essa Tabuada foi desenvolvida com os conhecimentos que possuo em HTML, CSS e JS.
 
 ## :computer: Tecnologias utilizadas
 
